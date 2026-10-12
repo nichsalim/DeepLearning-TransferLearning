@@ -69,6 +69,7 @@ Tugas05_TransferLearning.ipynb   # notebook utama (dikumpulkan dalam keadaan sud
 requirements.txt
 README.md
 tools/make_fake_pets.py          # pembuat dataset tiruan untuk smoke test
+tools/compress_for_lms.py        # ZIP LMS <=10 MB: kompres gambar saja, verifikasi teks/log identik
 tools/finalize.py                # report: isi angka laporan dari log -> PDF | facts: docs/FAKTA_HASIL.md | zip: susun & periksa ZIP
 docs/LAPORAN_Tugas05_final.pdf   # laporan (angka faktual diisi otomatis dari outputs/results)
 outputs/
@@ -78,6 +79,9 @@ outputs/
              failure_cases_*.png, gradcam_layer4_B2_vs_B3.png, ...
 ```
 Checkpoint model (`outputs/checkpoints/*.pt`, ±45 MB per model) tidak dimasukkan ke repositori.
+
+## ZIP pengumpulan LMS (batas 10 MB)
+ZIP untuk LMS dibuat dengan `python tools/compress_for_lms.py --max-mb 10`. Skrip ini hanya mengompres **gambar**: gambar foto di output notebook menjadi JPEG kualitas 85, dan `outputs/figures/*.png` menjadi PNG palet 256 warna dengan dithering. Teks output notebook, teks PDF laporan, dan seluruh log di `outputs/results/` diverifikasi otomatis identik dengan versi resolusi asli di repositori ini.
 
 ## Integritas data
 Semua angka di laporan berasal dari `outputs/results/summary.csv` / `summary.json`. Kurva berasal dari `history_<kode>.csv`, dan failure analysis dari `test_predictions_<kode>.csv`. Notebook melakukan pemeriksaan otomatis (lihat `quality_checks.csv`) terhadap kebocoran split, jumlah parameter trainable, tensor beku yang tidak berubah (termasuk buffer BatchNorm), konsistensi Macro F1, dan asal sampel failure analysis.

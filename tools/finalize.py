@@ -154,7 +154,9 @@ def make_failure_grid(best, n_rows):
     src = FIG / f"failure_cases_{best}.png"
     if not src.exists() or n_rows == 0:
         return None
-    im = Image.open(src).convert("RGB")
+    src_im = Image.open(src)
+    src_fmt = src_im.format                      # PNG di repo; JPEG pada salinan terkompres untuk LMS
+    im = src_im.convert("RGB")
     W, H = im.size
     h, w = H // n_rows, int(W * 0.535)
     tiles = [im.crop((0, r * h, w, (r + 1) * h)) for r in range(n_rows)]
@@ -164,7 +166,10 @@ def make_failure_grid(best, n_rows):
     for i, t in enumerate(tiles):
         grid.paste(t, ((i % cols) * w, (i // cols) * h))
     out = FIG / f"failure_cases_{best}_grid.png"
-    grid.save(out)
+    if src_fmt == "JPEG":
+        grid.save(out, "JPEG", quality=85, optimize=True)
+    else:
+        grid.save(out)
     return out
 
 
