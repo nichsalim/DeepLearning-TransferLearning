@@ -1,6 +1,6 @@
 <!--
 Draf laporan. Teks naratif (Ringkasan, Bagian A, C2–C5, hipotesis C3) disusun dengan bantuan AI berdasarkan log eksperimen
-dan citra hasil run, atas ketentuan dosen yang mengizinkan bantuan AI; mahasiswa wajib meninjau sebelum pengumpulan.
+dan citra hasil run, atas ketentuan dosen yang mengizinkan bantuan AI; mahasiswa telah meninjau dan menyetujui (konfirmasi 12 Okt 2026).
 Token {{...}} diisi otomatis oleh `python tools/finalize.py report` dari outputs/results/. Jangan diisi manual.
 Hipotesis C3 disimpan di docs/C3_hipotesis.csv (CSV log mentah tidak diubah). Komentar HTML tidak tampil di PDF.
 -->
@@ -107,5 +107,5 @@ Pada sebagian citra (Abyssinian, Japanese Chin, Maine Coon), B3 menyorot area wa
 **Verifikasi yang dilakukan:**
 
 - Otomatis (dari kode, hasilnya tercatat): 14/14 pemeriksaan di `quality_checks.csv` PASS; hash `summary.csv` cocok dengan `run_manifest.json`; angka di notebook identik dengan `summary.json` untuk keenam kondisi; setiap angka desimal dalam laporan ini dicocokkan otomatis dengan log (`tools/finalize.py`).
-- [ ] Saya telah membaca seluruh draf teks AI dalam laporan ini dan menyetujui isinya.
-- [ ] Saya memahami alur kode notebook dan dapat menjelaskan keputusan teknis utamanya.
+- [x] Saya telah membaca seluruh draf teks AI dalam laporan ini dan menyetujui isinya.
+- [x] Saya memahami alur kode notebook dan dapat menjelaskan keputusan teknis utamanya.
