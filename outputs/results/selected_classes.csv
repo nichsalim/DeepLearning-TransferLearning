@@ -1,0 +1,11 @@
+label,orig_label,class_name,species,n_total,n_from_trainval,n_from_test
+0,0,Abyssinian,cat,198,100,98
+1,2,American Pit Bull Terrier,dog,200,100,100
+2,9,British Shorthair,cat,200,100,100
+3,11,Egyptian Mau,cat,190,93,97
+4,17,Japanese Chin,dog,200,100,100
+5,20,Maine Coon,cat,200,100,100
+6,25,Pug,dog,200,100,100
+7,27,Russian Blue,cat,200,100,100
+8,29,Samoyed,dog,200,100,100
+9,34,Staffordshire Bull Terrier,dog,189,100,89

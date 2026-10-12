@@ -1,0 +1,6 @@
+data/
+outputs/checkpoints/
+*.pt
+__pycache__/
+.ipynb_checkpoints/
+outputs/outputs_bundle.zip

@@ -1,0 +1,6 @@
+{
+  "best_code": "B5",
+  "rule": "val_acc tertinggi pada checkpoint; seri -> val_loss terendah",
+  "val_acc": 0.9629629629629629,
+  "best_val_loss": 0.10315001010894775
+}

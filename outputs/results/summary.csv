@@ -1,0 +1,7 @@
+Kode,Arsitektur,Strategi,Augmentasi,Pretrained,Trainable params,Total params,Learning rate,Epoch dijalankan,Epoch konvergen (best),Early stop?,Durasi (s),s/epoch (train),Val loss (best),Val acc,Train acc clean,Gap acc (train-val),Test acc,Test Macro F1,Test Macro F1 CI95
+B1,resnet18,scratch,aug,False,11181642,11181642,all=0.001,20,15,True,168.5,7.66,1.3495,0.532,0.5871,0.0551,0.5017,0.4957,"[0.438, 0.546]"
+B2,resnet18,feature_extraction,aug,True,5130,11181642,fc=0.001,27,22,True,188.8,6.29,0.1713,0.9428,0.9516,0.0088,0.9259,0.9254,"[0.894, 0.952]"
+B3,resnet18,finetune_last,aug,True,8398858,11181642,"layer4=0.0001, fc=0.001",8,3,True,55.2,6.22,0.1744,0.9428,0.9783,0.0355,0.9394,0.9385,"[0.909, 0.964]"
+B4_noaug,resnet18,finetune_last,noaug,True,8398858,11181642,"layer4=0.0001, fc=0.001",13,8,True,42.6,2.59,0.1554,0.9596,1.0,0.0404,0.9562,0.9552,"[0.930, 0.976]"
+B4_aug,resnet18,finetune_last,aug,True,8398858,11181642,"layer4=0.0001, fc=0.001",8,3,True,55.6,6.3,0.1744,0.9428,0.9783,0.0355,0.9394,0.9385,"[0.909, 0.964]"
+B5,efficientnet_b0,finetune_last,noaug,True,3168550,4020358,"features.6=0.0001, features.7=0.0001, features.8=0.0001, classifier=0.001",10,5,True,43.0,3.58,0.1032,0.963,1.0,0.037,0.9764,0.9762,"[0.957, 0.992]"

@@ -1,0 +1,8 @@
+jenis,row_idx,image_id,true_name,pred_name,confidence,prob_true,top3,hipotesis_penyebab
+misklasifikasi,1130,american_pit_bull_terrier_43,American Pit Bull Terrier,Staffordshire Bull Terrier,0.96686125,0.033061747,Staffordshire Bull Terrier 0.97; American Pit Bull Terrier 0.03; Maine Coon 0.00,
+misklasifikasi,1141,american_pit_bull_terrier_53,American Pit Bull Terrier,Staffordshire Bull Terrier,0.92253083,0.07742546,Staffordshire Bull Terrier 0.92; American Pit Bull Terrier 0.08; Maine Coon 0.00,
+misklasifikasi,1154,american_pit_bull_terrier_65,American Pit Bull Terrier,Staffordshire Bull Terrier,0.84160197,0.15837418,Staffordshire Bull Terrier 0.84; American Pit Bull Terrier 0.16; Abyssinian 0.00,
+misklasifikasi,1227,British_Shorthair_34,British Shorthair,Russian Blue,0.83635616,0.1270461,Russian Blue 0.84; British Shorthair 0.13; Staffordshire Bull Terrier 0.02,
+misklasifikasi,655,Egyptian_Mau_155,Egyptian Mau,Abyssinian,0.7573518,0.23934455,Abyssinian 0.76; Egyptian Mau 0.24; Maine Coon 0.00,
+misklasifikasi,632,British_Shorthair_190,British Shorthair,Russian Blue,0.6305818,0.32422605,Russian Blue 0.63; British Shorthair 0.32; Staffordshire Bull Terrier 0.03,
+misklasifikasi,1298,Egyptian_Mau_209,Egyptian Mau,Abyssinian,0.3644195,0.26838183,Abyssinian 0.36; Maine Coon 0.33; Egyptian Mau 0.27,

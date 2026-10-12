@@ -1,0 +1,12 @@
+# Lingkungan utama: Google Colab (GPU T4). Semua paket di bawah sudah terpasang di Colab.
+# Versi yang benar-benar dipakai saat eksekusi dicatat otomatis di
+# outputs/results/environment_versions.txt dan outputs/results/config.json.
+torch>=2.0
+torchvision>=0.15        # weights API (ResNet18_Weights, EfficientNet_B0_Weights) + OxfordIIITPet
+numpy>=1.23
+pandas>=1.5
+scikit-learn>=1.1
+matplotlib>=3.6
+pillow>=9.0
+tabulate>=0.9            # untuk DataFrame.to_markdown (ada fallback bila tidak terpasang)
+jupyter                  # hanya bila dijalankan di luar Colab

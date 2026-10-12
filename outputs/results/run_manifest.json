@@ -1,0 +1,36 @@
+{
+  "finished_at": "2026-10-12 03:47:09",
+  "conditions": [
+    "B1",
+    "B2",
+    "B3",
+    "B4_noaug",
+    "B4_aug",
+    "B5"
+  ],
+  "best_by_val": "B5",
+  "smoke_test": false,
+  "env": {
+    "python": "3.13.15",
+    "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+    "torch": "2.11.0+cu130",
+    "torchvision": "0.26.0+cu130",
+    "numpy": "2.1.3",
+    "pandas": "2.2.3",
+    "scikit_learn": "1.6.1",
+    "matplotlib": "3.10.0",
+    "pillow": "11.3.0",
+    "device": "cuda",
+    "gpu_name": "Tesla T4",
+    "cuda_version": "13.0",
+    "cudnn_version": 92700,
+    "in_colab": true,
+    "smoke_test": false
+  },
+  "split_hash": {
+    "train": "2d0b69f4af28ee0ac12e735cc0d92847",
+    "val": "d280f9a36fa246cb13ca023256485f7e",
+    "test": "f842d666a3598bf2929590f53d3f113f"
+  },
+  "summary_csv_sha256": "887915a32ef90c86dfe976494e8801e5694ba3fefba5644cac75ea874e2ee8f7"
+}

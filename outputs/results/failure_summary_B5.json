@@ -1,0 +1,8 @@
+{
+  "best_code": "B5",
+  "n_test": 297,
+  "n_misclassified": 7,
+  "n_misclassified_shown": 7,
+  "n_supplementary_correct_shown": 0,
+  "selection_rule": "misklasifikasi diurutkan confidence menurun, maks 8; bila <5, pelengkap = prediksi benar dengan p(GT) terendah"
+}

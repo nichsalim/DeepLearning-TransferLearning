@@ -1,0 +1,15 @@
+pemeriksaan,status
+Bukan smoke test (hasil berasal dari dataset & bobot asli),PASS
+GPU dipakai,PASS
+B1-B4 lengkap,PASS
+B1 tanpa pretrained; B2/B3/B4 pretrained,PASS
+Trainable params B1/B2/B3 = 11.181.642 / 5.130 / 8.398.858,PASS
+"LR B3: layer4=1e-4, fc=1e-3",PASS
+Split saling lepas & stratified (assert lulus),PASS
+Test dievaluasi sekali per kondisi,PASS
+Macro F1 di summary == dihitung ulang dari prediksi,PASS
+summary.csv cocok dengan summary JSON,PASS
+Failure analysis: semua sampel berasal dari test set,PASS
+Failure analysis: >=5 misklasifikasi tersedia,PASS
+B5 (bonus) selesai,PASS
+C5 (opsional) selesai,PASS
